@@ -1,0 +1,122 @@
+{
+  "openapi": "3.0.0",
+
+  "info": {
+    "title": "API para Banco de Currículos",
+    "description": "Essa API é para realizacao de cadastro de candidatos a vagas de emprego",
+    "version": "0.0.1"
+  },
+
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "Ambiente de desenvolvimento"
+    }
+  ],
+
+  "paths": {
+    "/registro": {
+      "post": {
+        "summary": "Cadastro de candidato",
+        "description": "Rota de cadastro do candidato, recebe: nome, cargo, dataNascimento, estadoCivil, sexo, cep, logradouro, numero, bairro,cidade, uf, telefone1, telefone2, celular, contato, email, identidade,cpf_digitado, veiculo, habilitacao",
+        "tags": ["candidato"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                   },
+                   "cargo": {
+                     "type": "string"
+                  },
+                  "dataNascimento": {
+                    "type": "date" 
+                  },
+                  "estadoCivil": { 
+                     "type": "string"
+                  },
+                  "sexo": { 
+                     "type": "string"
+                  },
+                  "cep": {
+                     "type": "string"
+                  },
+                  "logradouro": {
+                     "type": "string"
+                  },
+                  "numero": {
+                    "type": "string"
+                  },
+                  "bairro": { 
+                     "type": "string"
+                  },
+                  "cidade": { 
+                     "type": "string"
+                  },
+                  "uf": { 
+                    "type": "string"
+                  },
+                  "telefone1": {
+                     "type": "string"
+                  },
+                  "telefone2": { 
+                     "type": "string"
+                  },
+                  "celular": { 
+                     "type": "string"
+                  },
+                  "contato": {
+                    "type": "string"
+                  },
+                  "email": { 
+                     "type": "string"
+                  },
+                  "identidade": {
+                     "type": "string"
+                  },
+                  "cpf_digitado": { 
+                     "type": "string"
+                  },
+                  "veiculo": { 
+                     "type": "string"
+                  },
+                  "habilitacao": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "Dados ficticios": {
+                  "value": {
+                    "nome": "Fulano da Silva",
+                    "cargo": "Suporte Técnico",
+                    "dataNascimento": "1990-08-26",
+                    "estadoCivil": "Casado(a)",
+                    "sexo": "Masculino",
+                    "cep": "31000-596",
+                    "logradouro": "Rua Dona Clara",
+                    "numero":"58",
+                    "bairro":"Santa Monica",
+                    "cidade":"Belo Horizonte",
+                    "uf":"MG",
+                    "telefone1":"31 3599-5555",
+                    "telefone2":"31 3356-5555",
+                    "celular": "31 99999-8888",
+                    "contato": "Fulano",
+                    "email": "fulano.silva@gmail.com",
+                    "identidade": "M9-666-569",
+                    "cpf_digitado": "46747136683",
+                    "veiculo": "Sim",
+                    "habilitacao": "CNH B"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

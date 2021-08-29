@@ -1,0 +1,136 @@
+* {
+    padding:0px;
+    margin: 0px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding: 3px;
+    border-bottom: 6px ridge rgb(142, 102, 182);
+}
+
+.logoImagem {
+    width: 50%;
+    height: 50%;
+}
+
+.containerLogoImagem {
+    display: flex;
+    align-items: center;
+}
+
+.midiasSociais li {
+    display: inline-block;
+    margin: 3px;
+}
+
+.midiasSociais li a {
+    padding: 1px;
+}
+
+h1 {
+    font-size: 160%;
+    color: rgb(115, 71, 160);
+}
+
+h2, h3 {
+    font-size: 130%;
+    color: rgb(115, 71, 160);
+}
+
+h4 {
+    font-size: 90%;
+    color: rgb(115, 71, 160);
+}
+
+form {
+    font-size: 80%;
+    margin-right: 90px;
+    margin-left: 70px;
+}
+
+.flexContainerLinha {
+    display: flex; 
+    justify-content: left;
+}
+
+.flexContainerLinha div {
+    margin: 5px;
+}
+
+.flexQuemSomos {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.quemSomos {
+    text-align: justify;
+    width: 100%;
+    font-size: 130%;
+    margin-top: 100px;
+}
+
+p {
+    text-align: justify;
+    max-width: 960px;
+}
+
+.imagem {
+    text-align:right;
+    width: 997px;
+}
+
+.campo input:focus {
+    background-color:rgb(246, 241, 247);
+}
+
+.campo select:focus {
+    background-color:rgb(246, 241, 247);
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color:white;
+    background-color: rgb(115, 71, 160);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px #999;
+    margin-left: 3px;
+}
+  
+.button:hover {
+    background-color:rgb(233, 148, 52);
+    color:white;
+}
+
+.button:active {
+    background-color: rgb(115, 71, 160);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 70%;
+    padding: 5px 15px;
+    color: white;
+    background-color: rgb(115, 71, 160);
+}
